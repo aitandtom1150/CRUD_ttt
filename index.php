@@ -9,8 +9,12 @@
 
   <body>
 
-    <!-- menu -->
-    
+    <!-- top bar -->
+    <div style="display: flex; gap: 50rem;">
+        <div><button style="border: none; background-color: transparent; cursor: pointer;"><a href="">Home</a></button></div>
+        <div>Mod</div>
+        <div>Profile</div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>
