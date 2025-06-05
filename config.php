@@ -19,14 +19,5 @@
     
     
     }
-$name = "<br>Aitsada";
-$lname = "<br>Asadit";
-
-// check connected
-$config = new config();
-echo "Database connected successfully!";
-echo $name;
-echo $lname;
-
 
 ?>

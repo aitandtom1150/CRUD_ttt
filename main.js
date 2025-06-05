@@ -1,6 +1,6 @@
-const addForm = document.getElementById("add-list-btn");
-const showAlert = document.getElementById("")
-const addModal = new bootstrap.Modal(doncument.getElementByid("addNewListModal"));
+const addForm = document.getElementById("add-list-form");
+const showAlert = document.getElementById("showAlert");
+const addModal = new bootstrap.Modal(document.getElementById("addNewListModal"));
 const tbody = document.querySelector("tbody");
 
 addForm.addEventListener("submit", async (e) => {
@@ -38,4 +38,5 @@ const fetchAllList = async () => {
     const response = await data.text();
     tbody.innerHTML = response;
 }
+
 fetchAllList();
