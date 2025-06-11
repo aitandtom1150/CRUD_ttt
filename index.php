@@ -70,35 +70,35 @@
 
   <!-- Edit List Modal Start -->
   <div class="modal fade" tabindex="-1" id="editListModal">
-    <div class="moda-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-header">Edit This List</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="edit-user-form" class="p-2" novalidate>
+          <form id="edit-list-form" class="p-2" novalidate>
             <input type="hidden" name="id" id="id">
             <div class="row mb-3 gx-3">
               <div class="mb-3">
                 <div class="fs-5 mb-2">Kind</div>
-                <input type="text" name="kind" class="form-control form-control-lg" placeholder="chicken, pork, meet" required>
+                <input type="text" id="kind" name="kind" class="form-control form-control-lg" placeholder="chicken, pork, meet" required>
                 <div class="invalid-feedback">enter kind such as chicken, pork, meet</div>
               </div>
               <div class="mb-3">
                 <div class="fs-5 mb-2">Part</div>
-                <input type="text" name="part" class="form-control form-control-lg" placeholder="chest, wings, hips" required>
+                <input type="text" id="part" name="part" class="form-control form-control-lg" placeholder="chest, wings, hips" required>
                 <div class="invalid-feedback">enter part such as chest, wings, hips</div>
               </div>
               <div class="mb-3">
                 <div class="fs-5 mb-2">Protein (per 100g of meat)</div>
-                <input type="text" name="protein" class="form-control form-control-lg" placeholder="unit of grams"
+                <input type="text" id="protein" name="protein" class="form-control form-control-lg" placeholder="unit of grams"
                   required>
                 <div class="invalid-feedback">enter protein</div>
               </div>
               <div class="mb-3">
                 <div class="fs-5 mb-2">kcal</div>
-                <input type="text" name="kcal" class="form-control form-control-lg" placeholder="unit of kcal">
+                <input type="text" id="kcal" name="kcal" class="form-control form-control-lg" placeholder="unit of kcal">
                 <div class="invalid-feedback">enter kcal</div>
               </div>
               <div class="mb-3">
@@ -148,6 +148,7 @@
               </tr>
             </thead>
             <tbody>
+              
             </tbody>
           </table>
         </div>

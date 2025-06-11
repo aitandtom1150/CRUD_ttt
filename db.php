@@ -29,6 +29,38 @@ class Database extends Config
         $result = $stmt->fetchAll();
         return $result;
     }
-    
+
+    public function readOne($id)
+    {
+        $sql = "SELECT * FROM food WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        $result = $stmt->fetch();
+        return $result;
+    }
+
+    public function update($id, $kind, $part, $protein, $kcal)
+    {
+        $sql = "UPDATE food SET kind = :kind, part = :part, protein = :protein, kcal = :kcal WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'kind' => $kind,
+            'part' => $part,
+            'protein' => $protein,
+            'kcal' => $kcal,
+            'id' => $id,
+        ]);
+        return true;
+
+    }
+    public function delete($id)
+    {
+        $sql = "DELETE FROM food WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        return true;
+    }
 }
+
+
 ?>

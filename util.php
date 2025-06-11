@@ -2,7 +2,7 @@
 
 class Util
 {
-    public function testInput($data)
+    public function testInput($data): string
     {
         $data = trim($data);
         $data = stripslashes($data);
@@ -14,7 +14,8 @@ class Util
 
     public function showMessage($type, $message)
     {
-        return '<div class="alert alert-' . $type . 'alert-dismissible fade show" role="alert">
+        return '<div class= "alert alert-' . $type . ' alert-dismissible fade show" role="alert">
+
                     <strong>' . $message . '</strong>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>';
