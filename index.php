@@ -8,10 +8,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
+  <link href="style.css" rel="stylesheet">
 </head>
-<!-- background:#212121 -->
-<body style="">
+
+
+<body >
 
   <!-- top bar -->
 
@@ -112,11 +113,11 @@
   </div>
 
   <!-- data -->
-  <div class="container">
-    <div class="row mt-4">
-      <div class="col-lg-12 d-flex justify-content-between align-items-center">
+  <div class="container" >
+    <div class="row mt-4" >
+      <div class="col-lg-12 d-flex justify-content-between align-items-center" >
         <div>
-          <h4 class="text-primary">All List in database</h4>
+          <h4 class="text-primary" >All List in database</h4>
         </div>
         <div>
           <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#addNewListModal">Add New
@@ -128,16 +129,16 @@
 
     <hr>
 
-    <div class="row">
+    <div class="row ">
       <div class="col-lg-12">
         <div id="showAlert"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="table-responsive">
-          <table class="table table-striped table-boredered text-center">
-            <thead>
+    <div class="row" >
+      <div class="col-lg-12" >
+        <div class="table-responsive" >
+          <table class="table table-striped table-bordered text-center">
+            <thead >
               <tr>
                 <th>ID</th>
                 <th>Kind</th>
